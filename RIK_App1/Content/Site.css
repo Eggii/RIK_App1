@@ -1,0 +1,107 @@
+﻿
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.bg-blue {
+    background-color: #005AA1;
+}
+
+.fg-blue {
+    color: #005AA1;
+}
+
+.text-align-center {
+    top: 50%;
+    position: relative;
+    transform: translateY(-50%);
+}
+
+.item-hover:hover {
+    background-color: #edf0f5
+}
+
+.RadioButtonWidth {
+    width: 200px;
+}
+
+@media screen and (max-width: 576px) {
+    .img-full {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: 20vw;
+    }
+
+    .img-full-1 {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: 25vw;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .img-full-sm {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: 12vw
+    }
+
+    .img-full-sm-1 {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: 27vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .img-full-md {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: 10vw
+    }
+
+    .img-full-md-1 {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: 19vw;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .img-full-lg {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: 8vw
+    }
+
+    .img-full-lg-1 {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: 15vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .img-full-xl {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: 7vw
+    }
+
+    .img-full-xl-1 {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        height: 12vw;
+    }
+}

@@ -1,0 +1,116 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="RIK_App1.Site1" %>
+
+<!DOCTYPE html>
+
+<html lang="et">
+<head runat="server">
+    <title>Master page</title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-grid.css" rel="stylesheet" />
+    <link href="Content/Site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body class="bg-light m-0 p-0">
+    <form runat="server">
+
+        <!--Navbar-->
+        <div class="container mt-3">
+            <nav class="navbar navbar-expand-md navbar-light bg-white pb-0 pt-0">
+                <asp:ImageButton ID="BtnLogo" OnClick="BtnLogo_Click" href="Home.aspx" ImageUrl="Content/logo.svg" runat="server" CssClass="navbar-brand" Height="60" Width="90"></asp:ImageButton>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPages" aria-controls="navbarPages" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarPages">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <asp:LinkButton ID="NavLinkAvaleht" href="Home.aspx" runat="server" CssClass="nav-link pt-4 pb-4">Avaleht</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item">
+                            <asp:LinkButton ID="NavLinkAddUserEvent" href="AddUserEvent.aspx" runat="server" CssClass="nav-link pt-4 pb-4">Ürituse lisamine</asp:LinkButton>
+                        </li>
+                    </ul>
+                    <img src="/Content/symbol.svg" width="90" height="60" alt="">
+                </div>
+            </nav>
+            <!--/.Navbar-->
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <!--Footer-->
+            <footer class="container page-footer font-small bg-dark">
+
+                <!--Footer Links-->
+                <div class="container pt-2 mt-5 mb-4 text-center text-md-left text-muted">
+                    <div class="row mt-0">
+
+                        <!--First column-->
+                        <div class="col-md-3 col-lg-3 col-xl-3">
+                            <h5 class="grey-text mt-0">Curabitur
+                            </h5>
+                            <hr class="mt-0 d-inline-block mx-auto">
+                            <p>
+                                Emauris<br />
+                                Kfringilla<br />
+                                Olin magna sem<br />
+                                Kelementum
+                            </p>
+                        </div>
+                        <!--/.First column-->
+
+                        <!--Second column-->
+                        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto">
+                            <h5 class="grey-text">Fusce
+                            </h5>
+                            <hr class="mt-0 d-inline-block mx-auto">
+                            <p>
+                                Econsectetur<br />
+                                Ksollicitudin<br />
+                                Omvulputate<br />
+                                Nunc fringilla tellu
+                            </p>
+                        </div>
+                        <!--/.Second column-->
+
+                        <!--Third column-->
+                        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto">
+                            <h5 class="grey-text">Kontakt
+                            </h5>
+                            <hr class="mt-0 d-inline-block mx-auto">
+                            <p>
+                                Peakontor: Tallinnas<br />
+                                Väike-Ameerika 1, 1154 Tallinn<br />
+                                Telefon: 605 4450
+                                Faks: 605 3186
+                            </p>
+                        </div>
+                        <!--/.Third column-->
+
+                        <!--Fourth column-->
+                        <div class="col-md-4 col-lg-3 col-xl-3">
+                            <hr class="mt-4 mb-4 d-inline-block mx-auto">
+                            <p>
+                                Harukontor: Võrus<br />
+                                Oja tn 7 (külastusaadress)<br />
+                                Telefon: 605 3330<br />
+                                Faks: 605 3155
+                            </p>
+                        </div>
+                        <!--/.Fourth column-->
+
+                    </div>
+                </div>
+                <!--/.Footer Links-->
+
+            </footer>
+            <!--/.Footer-->
+        </div>
+    </form>
+</body>
+</html>
